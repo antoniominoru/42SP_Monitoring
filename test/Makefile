@@ -5,40 +5,31 @@
 #                                                     +:+ +:+         +:+      #
 #    By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/07/15 21:18:27 by aminoru-          #+#    #+#              #
-#    Updated: 2022/07/28 16:03:58 by aminoru-         ###   ########.fr        #
+#    Created: 2022/04/05 15:19:37 by aminoru-          #+#    #+#              #
+#    Updated: 2022/04/28 00:06:02 by aminoru-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = monitoring
+NAME = run_test
 
-LIBFTPRINTHPATH = ./lib/printf/
-LIBFTPRINTH = ./lib/printf/libftprintf.a
-
-CC = gcc
-CFLAG = -Wall -Werror -Wextra
-INCS = -I ./include/
-SRCS = 	./src/monitoring.c \
-
+SRCS = test.c 
+LIB = ../libft.a
 OBJS = ${SRCS:.c=.o}
-
-all: ${NAME}
-
-${NAME}: ${OBJS} 
-			make -C $(LIBFTPRINTHPATH)
-			${CC} -o ${NAME} ${CFLAG} ${OBJS} ${LIBFTPRINTH}
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra
 
 .c.o:
-			${CC} ${CFLAG} ${INCS} -c $< -o ${<:.c=.o}
+				${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
+all:		${NAME}
+
+${NAME}:	${OBJS}
+				${CC} ${CFLAGS} -o ${NAME} ${OBJS} ${LIB} 
+				
 clean:
-			make clean -C ./lib/printf
-			rm -f ${OBJS}
+				rm -f ${OBJS}
 
-fclean: clean
-			make fclean -C ./lib/printf
-			rm -f ${NAME}
+fclean:		clean
+				rm -f ${NAME}
 
-re: fclean all
-
-.PHONY: all clean fclean re
+re:			fclean all
