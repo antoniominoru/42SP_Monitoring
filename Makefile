@@ -6,7 +6,7 @@
 #    By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/15 21:18:27 by aminoru-          #+#    #+#              #
-#    Updated: 2022/07/28 16:03:58 by aminoru-         ###   ########.fr        #
+#    Updated: 2022/07/30 18:10:12 by aminoru-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,8 @@ CC = gcc
 CFLAG = -Wall -Werror -Wextra
 INCS = -I ./include/
 SRCS = 	./src/monitoring.c \
+		./src/utils/db_load.c \
+		./src/utils/db_valid.c
 
 OBJS = ${SRCS:.c=.o}
 

@@ -6,30 +6,38 @@
 #    By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/05 15:19:37 by aminoru-          #+#    #+#              #
-#    Updated: 2022/04/28 00:06:02 by aminoru-         ###   ########.fr        #
+#    Updated: 2022/07/30 18:28:48 by aminoru-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = run_test
 
-SRCS = test.c 
-LIB = ../libft.a
-OBJS = ${SRCS:.c=.o}
+LIBFTPRINTHPATH = ../lib/printf/
+LIBFTPRINTH = ../lib/printf/libftprintf.a
+
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
+INCS = -I ./include/ 
+SRCS = test.c \
+		../src/utils/db_valid.c
 
-.c.o:
-				${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
+OBJS = ${SRCS:.c=.o}
 
 all:		${NAME}
 
 ${NAME}:	${OBJS}
-				${CC} ${CFLAGS} -o ${NAME} ${OBJS} ${LIB} 
-				
+				make -C $(LIBFTPRINTHPATH)
+				${CC} ${CFLAGS} -o ${NAME} ${OBJS} ${LIBFTPRINTH} 
+
+.c.o:
+				${CC} ${CFLAGS} ${INCS} -c $< -o ${<:.c=.o}
+
 clean:
+				make clean -C ../lib/printf
 				rm -f ${OBJS}
 
 fclean:		clean
+				make fclean -C ../lib/printf
 				rm -f ${NAME}
 
 re:			fclean all

@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   monitoring.c                                       :+:      :+:    :+:   */
+/*   test.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/28 16:01:42 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/07/30 19:46:59 by aminoru-         ###   ########.fr       */
+/*   Created: 2022/07/30 17:59:29 by aminoru-          #+#    #+#             */
+/*   Updated: 2022/07/30 19:42:32 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "monitoring.h"
+#ifndef TEST_H
+# define TEST_H
 
-int	main(void)
-{
-	t_list	*list;
+# include <stdio.h>
+# include <ctype.h>
+# include <string.h>
+# include "minunit.h"
+# include "../../lib/libft/libft.h"
+# include "../../lib/libft/get_next_line.h"
+# include "../../lib/printf/ft_printf.h"
 
-	list = db_load("db/monitoring.db");
-	if (db_valid(list) == -1)
-	{
-		perror("Error sintax db");
-		exit (1);
-	}
-	return (0);
-}
+int		db_valid(t_list	*list);
+#endif
