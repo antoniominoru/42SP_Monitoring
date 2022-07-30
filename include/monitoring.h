@@ -6,7 +6,7 @@
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 16:02:17 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/07/30 19:22:26 by aminoru-         ###   ########.fr       */
+/*   Updated: 2022/07/30 21:32:58 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,6 @@
 
 t_list	*db_load(char *name_db);
 int		db_valid(t_list	*list);
+void	perror_error(char *msg);
 
 #endif

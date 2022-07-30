@@ -6,7 +6,7 @@
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 16:01:42 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/07/30 19:46:59 by aminoru-         ###   ########.fr       */
+/*   Updated: 2022/07/30 22:42:56 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,6 @@ int	main(void)
 
 	list = db_load("db/monitoring.db");
 	if (db_valid(list) == -1)
-	{
-		perror("Error sintax db");
-		exit (1);
-	}
+		perror_error("Error sintax db.\n");
 	return (0);
 }
