@@ -6,14 +6,14 @@
 #    By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/15 21:18:27 by aminoru-          #+#    #+#              #
-#    Updated: 2022/07/31 16:25:59 by aminoru-         ###   ########.fr        #
+#    Updated: 2022/08/01 01:36:44 by aminoru-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = monitoring
 
-LIBFTPRINTHPATH = ./lib/printf/
-LIBFTPRINTH = ./lib/printf/libftprintf.a
+LIBPATH = ./lib/pipex/
+LIB = ./lib/pipex/lgp_pipex.a
 
 CC = gcc
 CFLAG = -Wall -Werror -Wextra
@@ -29,8 +29,8 @@ OBJS = ${SRCS:.c=.o}
 all: ${NAME}
 
 ${NAME}: ${OBJS} 
-			make -C $(LIBFTPRINTHPATH)
-			${CC} -o ${NAME} ${CFLAG} ${OBJS} ${LIBFTPRINTH}
+			make -C $(LIBPATH)
+			${CC} -o ${NAME} ${CFLAG} ${OBJS} ${LIB}
 
 .c.o:
 			${CC} ${CFLAG} ${INCS} -c $< -o ${<:.c=.o}
@@ -41,12 +41,12 @@ t:
 			./test/run_test
 
 clean:
-			make clean -C ./lib/printf
+			make clean -C ./lib/pipex
 			make clean -C ./test
 			rm -f ${OBJS}
 
 fclean: clean
-			make fclean -C ./lib/printf
+			make fclean -C ./lib/pipex
 			make fclean -C ./test
 			rm -f ${NAME}
 
