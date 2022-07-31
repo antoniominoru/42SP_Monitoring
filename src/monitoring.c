@@ -6,7 +6,7 @@
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 16:01:42 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/07/31 16:26:45 by aminoru-         ###   ########.fr       */
+/*   Updated: 2022/07/31 17:22:51 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	main(void)
 	t_list	*list;
 	int		timer;
 
-	list = db_load("db/monitoring.db");
+	list = db_load(DIR_MONITORING);
 	if (db_valid(list) == -1)
 		perror_error("Error sintax db.\n");
 	timer = 0;
