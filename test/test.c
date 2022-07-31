@@ -6,7 +6,7 @@
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 14:53:44 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/07/31 17:12:56 by aminoru-         ###   ########.fr       */
+/*   Updated: 2022/07/31 17:50:27 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,25 +24,15 @@ static char	*test_db_valid(void)
 	mu_assert("ERROR: db_valid()", db_valid(list) == ok);
 	list = ft_lstnew("intra	HTTP	intra.42.fr	GET	200");
 	mu_assert("ERROR: db_valid()", db_valid(list) != ok);
-	list = ft_lstnew("intra	HTTP	intra.42.fr	GET	200	120	tt");
-	mu_assert("ERROR: db_valid()", db_valid(list) != ok);
 	list = ft_lstnew("game ping test	PING	game.42sp.org.br	60");
 	mu_assert("ERROR: db_valid()", db_valid(list) == ok);
-	list = ft_lstnew("game ping test	PING	game.42sp.org.br");
-	mu_assert("ERROR: db_valid()", db_valid(list) != ok);
 	list = ft_lstnew("game ping test	PING	game.42sp.org.br	60	rr");
 	mu_assert("ERROR: db_valid()", db_valid(list) != ok);
 	list = ft_lstnew("game ping test	DNS	game.42sp.org.br	60	tt");
 	mu_assert("ERROR: db_valid()", db_valid(list) == ok);
-	list = ft_lstnew("game ping test	DNS	game.42sp.org.br	60");
-	mu_assert("ERROR: db_valid()", db_valid(list) != ok);
 	list = ft_lstnew("game ping test	DNS	game.42sp.org.br	60	tt	rr");
 	mu_assert("ERROR: db_valid()", db_valid(list) != ok);
-	list = ft_lstnew("game ping test	PUM	game.42sp.org.br	60	tt");
-	mu_assert("ERROR: db_valid()", db_valid(list) != ok);
-	list = ft_lstnew("game ping test	PUM	game.42sp.org.br	60");
-	mu_assert("ERROR: db_valid()", db_valid(list) != ok);
-	list = ft_lstnew("game ping test	PUM	game.42sp.org.br	60	tt	rr");
+	list = ft_lstnew("game ping test	PIN	game.42sp.org.br	60	tt");
 	mu_assert("ERROR: db_valid()", db_valid(list) != ok);
 	free(list);
 	return (0);
