@@ -6,15 +6,15 @@
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 14:53:44 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/07/30 20:07:19 by aminoru-         ###   ########.fr       */
+/*   Updated: 2022/07/30 23:31:35 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test.h"
 
-int tests_run = 0;
+int	g_tests_run = 0;
 
-static char *test_db_valid(void)
+static char	*test_db_valid(void)
 {
 	t_list	*list;
 	int		ok;
@@ -42,22 +42,21 @@ static char *test_db_valid(void)
 	return (0);
 }
 
-static char *all_tests(void)
+static char	*all_tests(void)
 {
 	mu_run_test(test_db_valid);
-	
 	return (0);
 }
 
 int	main(void)
 {
-	char *result;
+	char	*result;
 
-	result = all_tests();	
+	result = all_tests();
 	if (result)
 		printf("%s\n", result);
 	else
 		printf("All Tests Passed\n");
-	printf("Test run: %d\n", tests_run);
+	printf("Test run: %d\n", g_tests_run);
 	return (0);
 }
