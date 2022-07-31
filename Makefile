@@ -6,7 +6,7 @@
 #    By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/15 21:18:27 by aminoru-          #+#    #+#              #
-#    Updated: 2022/07/30 23:12:16 by aminoru-         ###   ########.fr        #
+#    Updated: 2022/07/31 16:25:59 by aminoru-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,8 @@ INCS = -I ./include/
 SRCS = 	./src/monitoring.c \
 		./src/utils/db_load.c \
 		./src/utils/db_valid.c \
-		./src/utils/error.c
+		./src/utils/error.c \
+		./src/utils/timer_select.c
 
 OBJS = ${SRCS:.c=.o}
 

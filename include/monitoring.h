@@ -6,7 +6,7 @@
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 16:02:17 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/07/31 01:46:01 by aminoru-         ###   ########.fr       */
+/*   Updated: 2022/07/31 16:26:40 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,11 @@
 # include "../lib/libft/get_next_line.h"
 # include "../lib/printf/ft_printf.h"
 
+# define HOUR_TO_SEC 86401
+
 t_list	*db_load(char *name_db);
 int		db_valid(t_list	*list);
 void	perror_error(char *msg);
+void	timer_selected(t_list *list, int timer);
 
 #endif
