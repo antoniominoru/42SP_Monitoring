@@ -6,7 +6,7 @@
 #    By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/15 21:18:27 by aminoru-          #+#    #+#              #
-#    Updated: 2022/08/02 16:30:20 by aminoru-         ###   ########.fr        #
+#    Updated: 2022/08/02 21:14:15 by aminoru-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,8 +42,8 @@ t:
 			./test/run_test
 
 clean:
-			make clean -C ./lib/printf
-			make clean -C ./test
+			make fclean -C ./lib/printf
+			make fclean -C ./test
 			rm -f ${OBJS}
 
 fclean: clean
