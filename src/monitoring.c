@@ -6,30 +6,20 @@
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 16:01:42 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/08/01 21:11:46 by aminoru-         ###   ########.fr       */
+/*   Updated: 2022/08/02 17:12:10 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "monitoring.h"
 
-int	main(int argc, char **argv, char **envp)
+int	main(int argc, char **argv)
 {
-	t_list	*list;
-	int		timer;
 
 	if (argc == 1)
-		ft_printf("%s\n",argv[0]);
-	list = db_load(DIR_MON);
-	if (db_valid(list) == -1)
-		perror_error("Error sintax db.\n");
-	timer = 0;
-	while (timer++ < HOUR_TO_SEC)
-	{
-		ft_printf("second %d\n", timer);
-		timer_selected(list, timer, envp);
-		if (timer == HOUR_TO_SEC)
-			timer = 0;
-		sleep(1);
-	}
+		db_monit();
+	else if	(argc == 2 && !ft_strncmp(argv[1], "--simplify", 10))
+		system("cat log/monitoring.log | grep Monitoramento:");
+	else
+		perror_error("Invalid Arguments\n");
 	return (0);
 }

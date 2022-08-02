@@ -6,7 +6,7 @@
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 16:02:17 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/08/01 21:11:51 by aminoru-         ###   ########.fr       */
+/*   Updated: 2022/08/02 17:03:40 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
 # include "../lib/libft/libft.h"
 # include "../lib/libft/get_next_line.h"
 # include "../lib/printf/ft_printf.h"
-# include "../lib/pipex/pipex.h"
 
 # define HOUR_TO_SEC 86401
 # define DIR_MON "db/monitoring.db"
@@ -31,6 +30,7 @@
 t_list	*db_load(char *name_db);
 int		db_valid(t_list	*list);
 void	perror_error(char *msg);
-void	timer_selected(t_list *list, int timer, char **envp);
+void	timer_selected(t_list *list, int timer);
+void	db_monit(void);
 
 #endif
