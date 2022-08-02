@@ -6,7 +6,7 @@
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/31 16:25:44 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/08/02 19:42:17 by aminoru-         ###   ########.fr       */
+/*   Updated: 2022/08/02 20:58:48 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	timer_selected(t_list *list, int timer)
 		if (!ft_strncmp(teste[1], "PING", ft_strlen(teste[1])))
 			if (timer % ft_atoi(teste[n_words - 1]) == 0)
 			{
-				system("ping -c1 intra.42.fr 2>&1 | sed '/^$/d'| sed \"s/^/Monitoramento: PING /\" | tee -a log/monitoring.log | grep Monitoramento:");
+				system("ping -c1 intra.42.fr 2>&1 | sed '/^$/d'| sed \"2s/^/Monitoramento: PING /\" | tee -a log/monitoring.log | grep Monitoramento:");
 			}
 		if (!ft_strncmp(teste[1], "DNS", ft_strlen(teste[1])))
 			if (timer % ft_atoi(teste[n_words - 2]) == 0)
