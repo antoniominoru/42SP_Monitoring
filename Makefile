@@ -6,7 +6,7 @@
 #    By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/15 21:18:27 by aminoru-          #+#    #+#              #
-#    Updated: 2022/08/02 23:42:48 by aminoru-         ###   ########.fr        #
+#    Updated: 2022/08/03 01:30:51 by aminoru-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,7 +50,7 @@ git:
 			make clean
 			clear
 			git add .
-			git commit -m "http_select"
+			git commit -m "ping_select + dns_select"
 			git push
 
 clean:

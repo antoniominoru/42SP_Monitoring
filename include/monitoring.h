@@ -6,7 +6,7 @@
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 16:02:17 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/08/02 23:22:24 by aminoru-         ###   ########.fr       */
+/*   Updated: 2022/08/03 01:25:28 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,7 @@ void	timer_selected(t_list *list, int timer);
 void	db_monit(void);
 void	free_moni(t_list *list);
 void	http_select(char **list);
+void	ping_select(char **list);
+void	dns_select(char **list);
 
 #endif
