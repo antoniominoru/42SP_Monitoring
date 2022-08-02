@@ -6,7 +6,7 @@
 #    By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/15 21:18:27 by aminoru-          #+#    #+#              #
-#    Updated: 2022/08/02 21:14:15 by aminoru-         ###   ########.fr        #
+#    Updated: 2022/08/02 21:38:21 by aminoru-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,9 +41,18 @@ t:
 			clear
 			./test/run_test
 
-clean:
+git:
+			echo > ./log/monitoring.log
 			make fclean -C ./lib/printf
-			make fclean -C ./test
+			make clean
+			git add .
+			git commit -m "teste"
+			git push
+			clear
+			echo Funcionou!
+clean:
+			make clean -C ./lib/printf
+			make clean -C ./test
 			rm -f ${OBJS}
 
 fclean: clean
