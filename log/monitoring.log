@@ -1,1 +1,268 @@
 
+Monitoramento: HTTP HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 19:47:26 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+PING intra.42.fr (163.172.250.13) 56(84) bytes of data.
+Monitoramento: PING 64 bytes from 163.172.250.13 (163.172.250.13): icmp_seq=1 ttl=54 time=216 ms
+--- intra.42.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 215.963/215.963/215.963/0.000 ms
+----------------
+Monitoramento: DNS Server:		8.8.8.8
+Address:	8.8.8.8#53
+Non-authoritative answer:
+Name:	intra.42.fr
+Address: 163.172.250.13
+Name:	intra.42.fr
+Address: 163.172.250.12
+Name:	intra.42.fr
+Address: 163.172.250.11
+----------------
+Monitoramento: HTTP HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 19:47:31 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+PING intra.42.fr (163.172.250.11) 56(84) bytes of data.
+Monitoramento: PING 64 bytes from 163.172.250.11 (163.172.250.11): icmp_seq=1 ttl=54 time=215 ms
+--- intra.42.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 215.052/215.052/215.052/0.000 ms
+----------------
+Monitoramento: HTTP HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 19:47:35 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+Monitoramento: DNS Server:		8.8.8.8
+Address:	8.8.8.8#53
+Non-authoritative answer:
+Name:	intra.42.fr
+Address: 163.172.250.13
+Name:	intra.42.fr
+Address: 163.172.250.12
+Name:	intra.42.fr
+Address: 163.172.250.11
+----------------
+PING intra.42.fr (163.172.250.12) 56(84) bytes of data.
+Monitoramento: PING 64 bytes from 163.172.250.12 (163.172.250.12): icmp_seq=1 ttl=54 time=214 ms
+--- intra.42.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 214.391/214.391/214.391/0.000 ms
+----------------
+Monitoramento: HTTP HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 19:47:40 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+Monitoramento: DNS Server:		8.8.8.8
+Address:	8.8.8.8#53
+Non-authoritative answer:
+Name:	intra.42.fr
+Address: 163.172.250.11
+Name:	intra.42.fr
+Address: 163.172.250.12
+Name:	intra.42.fr
+Address: 163.172.250.13
+----------------
+Monitoramento: HTTP HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 19:47:45 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+PING intra.42.fr (163.172.250.13) 56(84) bytes of data.
+Monitoramento: PING 64 bytes from 163.172.250.13 (163.172.250.13): icmp_seq=1 ttl=54 time=214 ms
+--- intra.42.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 213.909/213.909/213.909/0.000 ms
+----------------
+Monitoramento: HTTP HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 19:47:54 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+Monitoramento: DNS Server:		8.8.8.8
+Address:	8.8.8.8#53
+Non-authoritative answer:
+Name:	intra.42.fr
+Address: 163.172.250.12
+Name:	intra.42.fr
+Address: 163.172.250.13
+Name:	intra.42.fr
+Address: 163.172.250.11
+----------------
+PING intra.42.fr (163.172.250.12) 56(84) bytes of data.
+Monitoramento: PING 64 bytes from 163.172.250.12 (163.172.250.12): icmp_seq=1 ttl=54 time=216 ms
+--- intra.42.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 215.755/215.755/215.755/0.000 ms
+----------------
+Monitoramento: HTTP HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 19:47:59 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+PING intra.42.fr (163.172.250.12) 56(84) bytes of data.
+Monitoramento: PING 64 bytes from 163.172.250.12 (163.172.250.12): icmp_seq=1 ttl=54 time=214 ms
+--- intra.42.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 213.823/213.823/213.823/0.000 ms
+----------------
+Monitoramento: DNS Server:		8.8.8.8
+Address:	8.8.8.8#53
+Non-authoritative answer:
+Name:	intra.42.fr
+Address: 163.172.250.11
+Name:	intra.42.fr
+Address: 163.172.250.12
+Name:	intra.42.fr
+Address: 163.172.250.13
+----------------
+Monitoramento: HTTP HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 19:48:04 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+PING intra.42.fr (163.172.250.11) 56(84) bytes of data.
+Monitoramento: PING 64 bytes from 163.172.250.11 (163.172.250.11): icmp_seq=1 ttl=54 time=216 ms
+--- intra.42.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 215.900/215.900/215.900/0.000 ms
+----------------
+Monitoramento: HTTP HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 19:48:08 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+Monitoramento: DNS Server:		8.8.8.8
+Address:	8.8.8.8#53
+Non-authoritative answer:
+Name:	intra.42.fr
+Address: 163.172.250.11
+Name:	intra.42.fr
+Address: 163.172.250.12
+Name:	intra.42.fr
+Address: 163.172.250.13
+----------------
+Monitoramento: HTTP HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 19:48:13 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+PING intra.42.fr (163.172.250.13) 56(84) bytes of data.
+Monitoramento: PING 64 bytes from 163.172.250.13 (163.172.250.13): icmp_seq=1 ttl=54 time=215 ms
+--- intra.42.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 214.807/214.807/214.807/0.000 ms
+----------------
+Monitoramento: DNS Server:		8.8.8.8
+Address:	8.8.8.8#53
+Non-authoritative answer:
+Name:	intra.42.fr
+Address: 163.172.250.11
+Name:	intra.42.fr
+Address: 163.172.250.12
+Name:	intra.42.fr
+Address: 163.172.250.13
+----------------
+Monitoramento: HTTP HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 19:48:18 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+PING intra.42.fr (163.172.250.13) 56(84) bytes of data.
+Monitoramento: PING 64 bytes from 163.172.250.13 (163.172.250.13): icmp_seq=1 ttl=54 time=215 ms
+--- intra.42.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 214.999/214.999/214.999/0.000 ms
+----------------
+Monitoramento: HTTP HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 19:48:22 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+Monitoramento: DNS Server:		8.8.8.8
+Address:	8.8.8.8#53
+Non-authoritative answer:
+Name:	intra.42.fr
+Address: 163.172.250.12
+Name:	intra.42.fr
+Address: 163.172.250.11
+Name:	intra.42.fr
+Address: 163.172.250.13
+----------------
+PING intra.42.fr (163.172.250.11) 56(84) bytes of data.
+Monitoramento: PING 64 bytes from 163.172.250.11 (163.172.250.11): icmp_seq=1 ttl=54 time=215 ms
+--- intra.42.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 214.908/214.908/214.908/0.000 ms
+----------------
+Monitoramento: HTTP HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 19:48:27 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+Monitoramento: DNS Server:		8.8.8.8
+Address:	8.8.8.8#53
+Non-authoritative answer:
+Name:	intra.42.fr
+Address: 163.172.250.12
+Name:	intra.42.fr
+Address: 163.172.250.11
+Name:	intra.42.fr
+Address: 163.172.250.13
+----------------
