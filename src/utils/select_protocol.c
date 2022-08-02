@@ -6,7 +6,7 @@
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 23:17:20 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/08/03 01:28:10 by aminoru-         ###   ########.fr       */
+/*   Updated: 2022/08/03 01:34:12 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	dns_select(char **list)
 
 	cmd[0] = ft_strjoin("nslookup ",ft_strjoin(list[2], ft_strjoin(list[4]," 2>&1")));
 	cmd[1] = " | sed '/^$/d'";
-	cmd[2] = ft_strjoin(" | sed \"1s/^/Monitoramento: ",ft_strjoin(list[0], " /\""));
+	cmd[2] = ft_strjoin(" | sed \"3s/^/Monitoramento: ",ft_strjoin(list[0], " /\""));
 	cmd[3] = ft_strjoin(" | tee -a ", LOG_MON);
 	cmd[4] = " | grep Monitoramento:";
 	cmd[5] = ft_strjoin(cmd[0], ft_strjoin(cmd[1], ft_strjoin(cmd[2], ft_strjoin(cmd[3],cmd[4]))));
