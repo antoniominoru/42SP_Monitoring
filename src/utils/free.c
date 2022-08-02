@@ -1,24 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   monitoring.c                                       :+:      :+:    :+:   */
+/*   free.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/28 16:01:42 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/08/02 23:14:49 by aminoru-         ###   ########.fr       */
+/*   Created: 2022/08/02 22:47:38 by aminoru-          #+#    #+#             */
+/*   Updated: 2022/08/02 23:16:25 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "monitoring.h"
 
-int	main(int argc, char **argv)
+void	free_moni(t_list *list)
 {
-	if (argc == 1)
-		db_monit();
-	else if (argc == 2 && !ft_strncmp(argv[1], "--simplify", 10))
-		system("cat log/monitoring.log | grep Monitoramento:");
-	else
-		perror_error("Invalid Arguments\n");
-	return (0);
+	t_list	*current;
+
+	current = list;
+	while (current->next != NULL)
+	{
+		list = list->next;
+		free(current);
+		current = list;
+	}
+	free(current);
 }

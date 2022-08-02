@@ -6,7 +6,7 @@
 #    By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/15 21:18:27 by aminoru-          #+#    #+#              #
-#    Updated: 2022/08/02 21:44:47 by aminoru-         ###   ########.fr        #
+#    Updated: 2022/08/02 23:40:46 by aminoru-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,9 @@ SRCS = 	./src/monitoring.c \
 		./src/utils/db_valid.c \
 		./src/utils/error.c \
 		./src/utils/timer_select.c \
-		./src/utils/db_monit.c
+		./src/utils/db_monit.c \
+		./src/utils/free.c \
+		./src/utils/select_protocol.c
 
 OBJS = ${SRCS:.c=.o}
 
@@ -47,7 +49,7 @@ git:
 			make fclean -C ./lib/printf
 			make clean
 			git add .
-			git commit -m "teste"
+			git commit -m "http_select"
 			git push
 			clear
 			echo Funcionou!

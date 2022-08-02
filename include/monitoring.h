@@ -6,7 +6,7 @@
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 16:02:17 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/08/02 17:03:40 by aminoru-         ###   ########.fr       */
+/*   Updated: 2022/08/02 23:22:24 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <sys/types.h>
 # include <sys/wait.h>
 # include <stdio.h>
+# include <stdlib.h>
 // lib of 42 projects
 # include "../lib/libft/libft.h"
 # include "../lib/libft/get_next_line.h"
@@ -32,5 +33,7 @@ int		db_valid(t_list	*list);
 void	perror_error(char *msg);
 void	timer_selected(t_list *list, int timer);
 void	db_monit(void);
+void	free_moni(t_list *list);
+void	http_select(char **list);
 
 #endif
