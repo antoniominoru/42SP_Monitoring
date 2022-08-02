@@ -1,1 +1,211 @@
 
+Monitoramento: intra HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 23:37:45 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+PING web-proxy.42sp.org.br (177.8.173.132) 56(84) bytes of data.
+Monitoramento: game ping test 64 bytes from 177.8.173.132 (177.8.173.132): icmp_seq=1 ttl=49 time=23.4 ms
+--- web-proxy.42sp.org.br ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 23.424/23.424/23.424/0.000 ms
+----------------
+Server:		177.66.72.50
+Address:	177.66.72.50#53
+Monitoramento: workspaces monitoring ** server can't find workspaces.42sp.org.br8.8.8.8: NXDOMAIN
+----------------
+Monitoramento: intra HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 23:37:50 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+PING web-proxy.42sp.org.br (177.8.173.132) 56(84) bytes of data.
+Monitoramento: game ping test 64 bytes from 177.8.173.132 (177.8.173.132): icmp_seq=1 ttl=49 time=22.5 ms
+--- web-proxy.42sp.org.br ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 22.482/22.482/22.482/0.000 ms
+----------------
+Monitoramento: intra HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 23:37:55 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+Server:		177.66.72.50
+Address:	177.66.72.50#53
+Monitoramento: workspaces monitoring ** server can't find workspaces.42sp.org.br8.8.8.8: NXDOMAIN
+----------------
+PING web-proxy.42sp.org.br (177.8.173.132) 56(84) bytes of data.
+Monitoramento: game ping test 64 bytes from 177.8.173.132 (177.8.173.132): icmp_seq=1 ttl=49 time=22.3 ms
+--- web-proxy.42sp.org.br ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 22.283/22.283/22.283/0.000 ms
+----------------
+Monitoramento: intra HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 23:45:00 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+PING web-proxy.42sp.org.br (177.8.173.132) 56(84) bytes of data.
+Monitoramento: game ping test 64 bytes from 177.8.173.132 (177.8.173.132): icmp_seq=1 ttl=49 time=22.8 ms
+--- web-proxy.42sp.org.br ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 22.829/22.829/22.829/0.000 ms
+----------------
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+Monitoramento: workspaces monitoring Non-authoritative answer:
+workspaces.42sp.org.br	canonical name = web-proxy.42sp.org.br.
+Name:	web-proxy.42sp.org.br
+Address: 177.8.173.132
+----------------
+Monitoramento: intra HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 23:45:05 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+PING web-proxy.42sp.org.br (177.8.173.132) 56(84) bytes of data.
+Monitoramento: game ping test 64 bytes from 177.8.173.132 (177.8.173.132): icmp_seq=1 ttl=49 time=22.3 ms
+--- web-proxy.42sp.org.br ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 22.269/22.269/22.269/0.000 ms
+----------------
+Monitoramento: intra HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 23:45:10 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+Monitoramento: workspaces monitoring Non-authoritative answer:
+workspaces.42sp.org.br	canonical name = web-proxy.42sp.org.br.
+Name:	web-proxy.42sp.org.br
+Address: 177.8.173.132
+----------------
+PING web-proxy.42sp.org.br (177.8.173.132) 56(84) bytes of data.
+Monitoramento: game ping test 64 bytes from 177.8.173.132 (177.8.173.132): icmp_seq=1 ttl=49 time=25.7 ms
+--- web-proxy.42sp.org.br ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 25.700/25.700/25.700/0.000 ms
+----------------
+Monitoramento: intra HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 23:45:14 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+Monitoramento: workspaces monitoring Non-authoritative answer:
+workspaces.42sp.org.br	canonical name = web-proxy.42sp.org.br.
+Name:	web-proxy.42sp.org.br
+Address: 177.8.173.132
+----------------
+Monitoramento: intra HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 23:45:19 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+PING web-proxy.42sp.org.br (177.8.173.132) 56(84) bytes of data.
+Monitoramento: game ping test 64 bytes from 177.8.173.132 (177.8.173.132): icmp_seq=1 ttl=49 time=22.3 ms
+--- web-proxy.42sp.org.br ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 22.340/22.340/22.340/0.000 ms
+----------------
+Monitoramento: intra HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 23:45:24 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+Monitoramento: workspaces monitoring Non-authoritative answer:
+workspaces.42sp.org.br	canonical name = web-proxy.42sp.org.br.
+Name:	web-proxy.42sp.org.br
+Address: 177.8.173.132
+----------------
+PING web-proxy.42sp.org.br (177.8.173.132) 56(84) bytes of data.
+Monitoramento: game ping test 64 bytes from 177.8.173.132 (177.8.173.132): icmp_seq=1 ttl=49 time=22.9 ms
+--- web-proxy.42sp.org.br ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 22.886/22.886/22.886/0.000 ms
+----------------
+Monitoramento: intra HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 23:45:29 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+PING web-proxy.42sp.org.br (177.8.173.132) 56(84) bytes of data.
+Monitoramento: game ping test 64 bytes from 177.8.173.132 (177.8.173.132): icmp_seq=1 ttl=49 time=20.9 ms
+--- web-proxy.42sp.org.br ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 20.933/20.933/20.933/0.000 ms
+----------------
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+Monitoramento: workspaces monitoring Non-authoritative answer:
+workspaces.42sp.org.br	canonical name = web-proxy.42sp.org.br.
+Name:	web-proxy.42sp.org.br
+Address: 177.8.173.132
+----------------
+Monitoramento: intra HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 23:45:33 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+PING web-proxy.42sp.org.br (177.8.173.132) 56(84) bytes of data.
+Monitoramento: game ping test 64 bytes from 177.8.173.132 (177.8.173.132): icmp_seq=1 ttl=49 time=24.2 ms
+--- web-proxy.42sp.org.br ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 24.243/24.243/24.243/0.000 ms
+----------------
+----------------
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+Monitoramento: workspaces monitoring Non-authoritative answer:
+workspaces.42sp.org.br	canonical name = web-proxy.42sp.org.br.
+Name:	web-proxy.42sp.org.br
+Address: 177.8.173.132
+----------------
