@@ -6,7 +6,7 @@
 #    By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/15 21:18:27 by aminoru-          #+#    #+#              #
-#    Updated: 2022/08/02 23:40:46 by aminoru-         ###   ########.fr        #
+#    Updated: 2022/08/02 23:42:48 by aminoru-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,11 +48,11 @@ git:
 			make re
 			make fclean -C ./lib/printf
 			make clean
+			clear
 			git add .
 			git commit -m "http_select"
 			git push
-			clear
-			echo Funcionou!
+
 clean:
 			make clean -C ./lib/printf
 			make clean -C ./test
