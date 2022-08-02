@@ -266,3 +266,37 @@ Address: 163.172.250.11
 Name:	intra.42.fr
 Address: 163.172.250.13
 ----------------
+Monitoramento: HTTP HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 19:58:10 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
+PING intra.42.fr (163.172.250.13) 56(84) bytes of data.
+Monitoramento: PING 64 bytes from 163.172.250.13 (163.172.250.13): icmp_seq=1 ttl=54 time=214 ms
+--- intra.42.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 214.358/214.358/214.358/0.000 ms
+----------------
+Monitoramento: DNS Server:		8.8.8.8
+Address:	8.8.8.8#53
+Non-authoritative answer:
+Name:	intra.42.fr
+Address: 163.172.250.11
+Name:	intra.42.fr
+Address: 163.172.250.12
+Name:	intra.42.fr
+Address: 163.172.250.13
+----------------
+Monitoramento: HTTP HTTP/1.1 301 Moved Permanently
+Server: nginx
+Date: Tue, 02 Aug 2022 19:58:15 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://intra.42.fr/
+Strict-Transport-Security: max-age=15552001; includeSubDomains;
+----------------
