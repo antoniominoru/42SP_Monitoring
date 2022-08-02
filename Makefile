@@ -6,7 +6,7 @@
 #    By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/15 21:18:27 by aminoru-          #+#    #+#              #
-#    Updated: 2022/08/02 21:38:21 by aminoru-         ###   ########.fr        #
+#    Updated: 2022/08/02 21:38:42 by aminoru-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,7 @@ git:
 			git commit -m "teste"
 			git push
 			clear
-			echo Funcionou!
+			Funcionou!
 clean:
 			make clean -C ./lib/printf
 			make clean -C ./test
