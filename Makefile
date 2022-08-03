@@ -6,7 +6,7 @@
 #    By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/15 21:18:27 by aminoru-          #+#    #+#              #
-#    Updated: 2022/08/03 01:34:41 by aminoru-         ###   ########.fr        #
+#    Updated: 2022/08/03 02:11:50 by aminoru-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,7 +50,7 @@ git:
 			make clean
 			clear
 			git add .
-			git commit -m "dns_select"
+			git commit -m "norminette ok in src/"
 			git push
 
 clean:

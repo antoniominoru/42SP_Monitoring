@@ -6,7 +6,7 @@
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 16:25:56 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/08/02 22:50:16 by aminoru-         ###   ########.fr       */
+/*   Updated: 2022/08/03 01:49:06 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ void	db_monit(void)
 {
 	t_list	*list;
 	int		timer;
-
 
 	list = db_load(DIR_MON);
 	if (db_valid(list) == -1)
