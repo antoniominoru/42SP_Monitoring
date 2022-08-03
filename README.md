@@ -79,7 +79,7 @@ e para iniciar a aplicação é necessário executa-lo:
 
 ## Funcionamento em Desenvolvimento
 
-**make**: Faz a combilação do programa criando o executáves "monitoring".
+**make**: Faz a combilação do programa criando o executável "monitoring".
 
 **make clean**: Remove todos os arquivos *.o.
 
