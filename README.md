@@ -69,12 +69,13 @@ Foi utilizado um servidor Debian onde foi configurado:
 
 Foi configurado no Servidor conexão ssh com Github.
 
-Para pegar a versão mais atual do monitoramento é necessário usar o comando:
+Para pegar a versão mais atual aplicativo de monitoramento é necessário usar o comando a seguir na sua pasta de monitoramento:
 
 `git pull`
 
-Na sua pasta de monitoramento e precisa executa-lo novamente;
+e para iniciar a aplicação é necessário executa-lo:
 
+`./monitoring`
 
 ## Funcionamento em Desenvolvimento
 
