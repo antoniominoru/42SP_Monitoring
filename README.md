@@ -4,14 +4,14 @@
 
 # Pré requisitos
 - Linux;
-- ping instalado;
-- curl instalado;
-- nkloop instalado;
+- Ping instalado;
+- Curl instalado;
+- Nkloop instalado;
 - Git instalado;
 
 -------------------------------------------------------
 
-# Referências
+# Explicações iniciais
 
 ## monitoring.db
 
@@ -52,8 +52,31 @@ Podendo ser executado com a seguinte sintaxe:
 ```
 
 -------------------------------------------------------
+# Projeto
 
-# Funcionamento em Desenvolvimento
+O programa de monitoramento foi desenvolvido no workspace e projetado para funcionar em servidor dedicado para o monitoramento dos serviços.
+
+## Servidor
+
+Foi utilizado um servidor Debian onde foi configurado:
+
+- Criptografado LVM;
+- Configurado AppArmor;
+- Configurado Firewall - UFW liberando porta 4242 e bloqueando porta padrão 22 do ssh;
+- Configurado SSH na porta 4242;
+- Configurado Politica de senha;
+- Instalado Ping, Curl (Para teste HTTP), Nkloop (Para teste DNS) e Git (Para baixar projeto do github);
+
+Foi configurado no Servidor conexão ssh com Github.
+
+Para pegar a versão mais atual do monitoramento é necessário usar o comando:
+
+`git pull`
+
+Na sua pasta de monitoramento e precisa executa-lo novamente;
+
+
+## Funcionamento em Desenvolvimento
 
 **make**: Faz a combilação do programa criando o executáves "monitoring".
 
@@ -67,15 +90,14 @@ Podendo ser executado com a seguinte sintaxe:
 
 **make re**: Recompila o arquivo "monitoring" primeiro remove todos os arquivos *.o e os executáves, e depois compila novamente.
 
--------------------------------------------------------
 
-# Funcionamento em Produção
+## Funcionamento em Produção
 
-## ./monitoring
+### ./monitoring
 
-saída padrão -> de uma forma sucinta
-informações detalhadas -> no arquivo monitoring.log
+Quando executado o `./monitoring` começa o monitoramento listado so arquivo `monitoring.db` sendo apresentado uma versão resumida no shell e uma versão mais completa fica registrado no `log/monitoring.log`
 
-## ./monitoring --simplify
+### ./monitoring --simplify
 
-vai ler o arquivo monitoring.log e colocar na tela novamente as informações resumidas (mesmas da saida padrão)
+Quando executado o `./monitoring` com a flag `--simplify`, ou seja, executado `./monitoring --simplify` 
+o programa faz a leitura do arquivo `log/monitoring.log` e traduz a informação colocando no shell uma uma versão resumida das informações.
