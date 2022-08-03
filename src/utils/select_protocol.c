@@ -6,7 +6,7 @@
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 23:17:20 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/08/03 02:10:46 by aminoru-         ###   ########.fr       */
+/*   Updated: 2022/08/03 03:01:37 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	http_select(char **list)
 	char	*cmd[6];
 	char	*tmp[3];
 
-	cmd[0] = ft_strjoin("curl --head -s ", ft_strjoin(list[2], " 2>&1"));
+	cmd[0] = ft_strjoin("curl -s -I ", list[2]);
 	cmd[1] = ft_strjoin(" | sed '$d'", " | sed \"1s/^/Monitoring: ");
 	cmd[2] = ft_strjoin(list[0], " /\"");
 	cmd[3] = ft_strjoin(" | tee -a ", LOG_MON);
@@ -27,6 +27,7 @@ void	http_select(char **list)
 	tmp[2] = ft_strjoin(tmp[0], tmp[1]);
 	cmd[5] = ft_strjoin(tmp[2], cmd[4]);
 	system(cmd[5]);
+// https://www.alura.com.br/artigos/curl-como-usar fazer o selecionador de ok
 	system("echo ---------------- >> log/monitoring.log");
 }
 
