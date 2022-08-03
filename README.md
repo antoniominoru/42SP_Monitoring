@@ -4,10 +4,18 @@
 - Linux;
 - ping instalado;
 - curl instalado;
-- nkloop;
-- Git;
+- nkloop instalado;
+- Git instalado;
 
 # Referências
+
+## monitoring.db
+
+
+O arquivo `monitoring.db` define como a aplicação funcionará.
+
+A estrutura é definida por linhas e colunas, onde cada linha terá as configurações separadas por um TAB, que definem as colunas.
+
 As configurações para cada protocolo são:
 
 | Protocolo   | Configurações                                                           |
@@ -24,19 +32,26 @@ game ping test	PING	game.42sp.org.br	60
 workspaces monitoring	PING	workspaces.42sp.org.br	60
 ```
 
+
+## monitoring.log
+
+
+Este é o arquivo de log localizado na pasta "log/" nele fica armazenado as informações completas do monitoramento.
+
+
 # Funcionamento em Desenvolvimento
 
-make: Faz a combilação do programa criando o executáves "monitoring".
+**make**: Faz a combilação do programa criando o executáves "monitoring".
 
-make clean: Remove todos os arquivos *.o.
+**make clean**: Remove todos os arquivos *.o.
 
-make fclean: Remove todos os arquivos *.o e todos os executáves.
+**make fclean**: Remove todos os arquivos *.o e todos os executáves.
 
-make t: Compila o teste e o executa.
+**make t**: Compila o teste e o executa.
 
-make git: Limpa arquivo monitoring.log, recompila, remove todos os *.o, remove todos os executávess menos o "monitoring", adiciona pacotes no git, comita e faz push no repositório.
+**make git**: Limpa arquivo "monitoring.log", recompila, remove todos os *.o, remove todos os executávess menos o "monitoring", adiciona pacotes no git, comita e faz push no repositório.
 
-make re: Recompila o arquivo "monitoring" primeiro remove todos os arquivos *.o e os executáves, e depois compila novamente.
+**make re**: Recompila o arquivo "monitoring" primeiro remove todos os arquivos *.o e os executáves, e depois compila novamente.
 
 # Funcionamento em Produção
 
