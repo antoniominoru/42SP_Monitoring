@@ -6,7 +6,7 @@
 /*   By: aminoru- <aminoru-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 23:17:20 by aminoru-          #+#    #+#             */
-/*   Updated: 2022/08/03 03:01:37 by aminoru-         ###   ########.fr       */
+/*   Updated: 2022/08/03 20:24:33 by aminoru-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ void	http_select(char **list)
 	tmp[2] = ft_strjoin(tmp[0], tmp[1]);
 	cmd[5] = ft_strjoin(tmp[2], cmd[4]);
 	system(cmd[5]);
-// https://www.alura.com.br/artigos/curl-como-usar fazer o selecionador de ok
 	system("echo ---------------- >> log/monitoring.log");
 }
 
