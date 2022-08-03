@@ -1,11 +1,15 @@
 # Funcionamento da ferramenta de Monitoramento
 
+-------------------------------------------------------
+
 # Pré requisitos
 - Linux;
 - ping instalado;
 - curl instalado;
 - nkloop instalado;
 - Git instalado;
+
+-------------------------------------------------------
 
 # Referências
 
@@ -36,8 +40,18 @@ workspaces monitoring	PING	workspaces.42sp.org.br	60
 ## monitoring.log
 
 
-Este é o arquivo de log localizado na pasta "log/" nele fica armazenado as informações completas do monitoramento.
+Este é o arquivo de log localizado na pasta `log/` nele fica armazenado as informações completas do monitoramento.
 
+## monitoring
+
+O `monitoring` encontrado na raiz do projeto é o executável do programa de monitoramento.
+
+Podendo ser executado com a seguinte sintaxe:
+```txt
+./monitoring
+```
+
+-------------------------------------------------------
 
 # Funcionamento em Desenvolvimento
 
@@ -52,6 +66,8 @@ Este é o arquivo de log localizado na pasta "log/" nele fica armazenado as info
 **make git**: Limpa arquivo "monitoring.log", recompila, remove todos os *.o, remove todos os executávess menos o "monitoring", adiciona pacotes no git, comita e faz push no repositório.
 
 **make re**: Recompila o arquivo "monitoring" primeiro remove todos os arquivos *.o e os executáves, e depois compila novamente.
+
+-------------------------------------------------------
 
 # Funcionamento em Produção
 
